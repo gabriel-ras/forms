@@ -1,0 +1,22 @@
+.background{
+    background-color: #F2EED8;
+}
+
+.forms{
+    padding: 10px 400px;
+}
+h1{
+    padding-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.button{
+    padding: 10px 0px;
+    text-align: center;
+    width: 200px;
+}
+
+.Q{
+    text-align: center;
+}

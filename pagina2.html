@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Triagem Médica</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="background">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Triagem</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">início</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <h1>biosinais</h1>
+
+    <div class="row g-3 forms">
+        
+        <div class="col-6">
+        <label class="form-label">Temperatura Corporal:</label>
+        <input type="number" class="form-control bg-light" placeholder="°C">
+        </div>
+
+        <div class="col-6">
+            <label class="form-label">Frequência cardíarca:</label>
+            <input type="number" class="form-control bg-light" placeholder="bpm">
+        </div>
+
+        <div class="col-6">
+            <label class="form-label">Frequência Respiratória:</label>
+            <input type="number" class="form-control bg-light" placeholder="respirações por minuto">
+        </div>
+
+        <div class="col-6">
+            <label class="form-label">Pressão arterial:</label>
+            <input type="number" class="form-control bg-light" placeholder="mmHg">
+        </div>
+
+        <div class="col-6">
+            <label class="form-label">Saturação de Oxigênio (SpO2):</label>
+            <input type="number" class="form-control bg-light" placeholder="%">
+        </div>
+
+        <div class="col-6">
+            <label class="form-label">Nível de Dor (0-10):</label>
+            <input type="number" class="form-control bg-light" min="0" max="10" placeholder="(0-10)">
+        </div>
+
+        <div class="col-6">
+            <label class="form-label">Glicemia Capilar (se aplicável):</label>
+            <input type="number" class="form-control bg-light" placeholder="mg/dL">
+        </div>
+
+        <div class="col-6">
+            <label class="form-label">Nível de Consciência:</label>
+            <input type="number" class="form-control bg-light" placeholder="AVPU">
+        </div>
+
+        <div class="col-6">
+            <label class="form-label">Glicemia Capilar (se aplicável):</label>
+            <input type="number" class="form-control bg-light" placeholder="mg/dL">
+        </div>
+
+        <div class="col-6">
+            <label class="form-label">Nível de Consciência:</label>
+            <input type="number" class="form-control bg-light" placeholder="AVPU">
+        </div>
+
+        <div class="col-6">
+            <label class="form-label">Dor Toráxica:</label><br>
+            <input type="radio" class="bg-light" name="dorT">
+            <label class="form-label">Sim</label><br>
+            <input type="radio" class="bg-light" name="dorT">
+            <label class="form-label">Não</label>
+        </div>
+
+        <div class="col-6">
+            <label class="form-label">Descrição</label>
+            <input type="text" class="form-control bg-light">
+        </div>
+        <div class="col-4">
+            <label class="form-label">Peso:</label>
+            <input type="number" class="form-control bg-light" placeholder="kg">
+        </div>
+
+        <div class="col-4">
+            <label class="form-label">Altura:</label>
+            <input type="number" class="form-control bg-light" placeholder="metros">
+        </div>
+
+        <div class="col-4">
+            <label class="form-label">Índice de Massa Corporal (IMC):</label>
+            <input type="number" class="form-control bg-light">
+        </div>
+
+        <div class="col-6">
+            <label class="form-label">Frequência Cardíaca Apical:</label>
+            <input type="number" class="form-control bg-light" placeholder="bpm">
+        </div>
+
+        <div class="col-6">
+            <label class="form-label">Estado Hidratacional:</label>
+            <input type="text" class="form-control bg-light">
+        </div>
+    </div>
+    <h1>Comorbidades</h1>
+
+    <div class="row g-3 forms">
+        <div class="col-4 border border-dark">
+            <label class="form-label"><b>Diabetes Mellitus:</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Tipo 1</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Tipo 2</label><br>
+        </div>
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Hipertensão Arterial:</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Sim</label><br>
+        </div>
+    
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Hipertensão Arterial:</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Sim</label><br>
+        </div>
+    
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Doenças Cardiovasculares:</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Doença Arterial Coronariana</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Insuficiência Cardíaca</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Arritmias</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Cardiomiopatia</label><br>
+        </div>
+    
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Doenças Respiratórias Crônicas:</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Asma</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Doença Pulmonar Obstrutiva Crônica (DPOC)</label><br>
+        </div>
+    
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Doenças Renais:</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Insuficiência Renal Crônica</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Nefropatia Diabética</label><br>
+        </div>
+    
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Doenças Hepáticas:</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Hepatite Crônica</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Cirrose Hepática</label><br>
+        </div>
+    
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Doenças Gastrointestinais:</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Doença do Refluxo Gastroesofágico (DRGE)</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Doença Inflamatória Intestinal (Doença de Crohn, Colite Ulcerativa)</label><br>
+        </div>
+    
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Doenças Endócrinas</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Hipotireoidismo</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Hipertireoidismo</label><br>
+        </div>
+    
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Doenças Neurológicas</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Epilepsia</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Doença de Parkinson</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Esclerose Múltipla</label><br>
+        </div>
+    
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Doenças Psiquiátricas</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Depressão</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Transtorno Bipolar</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Ansiedade</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Esquizofrenia</label><br>
+        </div>
+    
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Doenças Osteoarticulares</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Osteoartrite</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Artrite Reumatoide</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Osteoporose</label><br>
+        </div>
+    
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Imunossupressão</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">HIV/AIDS</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Uso crônico de imunossupressores</label><br>
+        </div>
+    
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Doenças Autoimunes</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Lúpus Eritematoso Sistêmico</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Artrite Reumatoide</label><br>
+        </div>
+    
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Anemia</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Deficiência de Ferro</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Anemia Falciforme</label><br>
+        </div>
+    
+        <div class="col-sm-6 border border-dark">
+            <label class="form-label"><b>Obesidade</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Índice de Massa Corporal (IMC) elevado</label><br>
+        </div>
+    
+        <div class="col-sm-6 border border-dark">
+            <label class="form-label"><b>Doenças Dermatológicas</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Psoríase</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Dermatite Atópica</label><br>
+        </div>
+    
+       
+    
+        <div class="col-6 border border-dark">
+            <label class="form-label"><b>Alergias</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Alergias Alimentares:</label>
+            <input type="text" class="bg-light"><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Alergias Medicamentosas:</label>
+            <input type="text" class="bg-light"><br>
+        </div>
+    
+        <div class="col-sm-6 border border-dark">
+            <label class="form-label"><b>Doenças Oncológicas</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Tipo específico de câncer:</label>
+            <input type="text" class="bg-light"><br>
+        </div>
+    </div>
+    
+    <h1>Sistomas</h1>
+    
+    <div class="forms row g-3">
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Sintomas Gerais</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Febre</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Calafrios</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Suores Noturnos</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Fadiga / Cansaço</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Fraqueza</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Perda de Apetite</label><br>
+        </div>
+
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Sintomas Respiratórios</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Tosse</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Tosse com Expectoração</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Falta de Ar / Dispneia</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Dor Torácica ao Respirar</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Sibilos (Chiado no Peito)</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Congestão Nasal</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Coriza (Nariz Escorrendo)</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Espirros</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Dor de Garganta</label><br>
+        </div>
+
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Sintomas Cardiovasculares*</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Dor no Peito</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Palpitações (Batimentos Irregulares)</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Inchaço nas Pernas (Edema)</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Tontura / Vertigem</label><br>
+        </div>
+
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Sintomas Gastrointestinais</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Náusea</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Vômito</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Diarreia</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Constipação</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Dor Abdominal</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Azia / Queimação no Estômago</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Sangue nas Fezes</label><br>
+        </div>
+
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Sintomas Neurológicos</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Dor de Cabeça</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Tontura</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Convulsões</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Dormência ou Formigamento</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Perda de Equilíbrio</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Confusão / Desorientação</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Problemas de Memória</label><br>
+        </div>
+
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Sintomas Musculoesqueléticos</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Dor nas Articulações</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Inchaço nas Articulações</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Dor Muscular</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Rigidez</label><br>
+        </div>
+
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Sintomas Dermatológicos</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Erupções Cutâneas</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Coceira</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Vermelhidão</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Inchaço</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Alterações na Cor da Pele</label><br>
+        </div>
+
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Sintomas Urinários</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Dor ao Urinar</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Urgência para Urinar</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Aumento da Frequência Urinária</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Sangue na Urina</label><br>
+        </div>
+
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Sintomas Reprodutivos</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Irregularidades Menstruais</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Secreção Vaginal Anormal</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Disfunção Erétil</label><br>
+        </div>
+
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Sintomas Psicossociais</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Mudanças de Humor</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Insônia</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Estresse</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Ansiedade</label><br>
+        </div>
+
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Sintomas Oftalmológicos</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Visão Embaçada</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Olhos Secos</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Olhos Vermelhos</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Dor nos Olhos</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Sensibilidade à Luz</label><br>
+        </div>
+
+        <div class="col-sm-4 border border-dark">
+            <label class="form-label"><b>Sintomas Otorrinolaringológicos</b></label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Zumbido nos Ouvidos</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Perda de Audição</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Dor de Ouvido</label><br>
+            <input type="checkbox" class="bg-light">
+            <label class="form-label">Dificuldade para Engolir</label><br>
+        </div>
+
+        <div class="col-sm-6">
+            <label><b>Duração dos sintomas:</b></label><br>
+            <input type="radio" name="duracao" class="bg-light">
+            <label class="form-label">Menos de 1 dia</label><br>
+            <input type="radio" name="duracao" class="bg-light">
+            <label class="form-label">1-3 dias</label><br>
+            <input type="radio" name="duracao" class="bg-light">
+            <label class="form-label">4-7 dias</label><br>
+            <input type="radio" name="duracao" class="bg-light">
+            <label class="form-label">Mais de 1 semana</label><br>
+        </div>
+
+        <div class="col-sm-6">
+            <label><b>Gravidade dos sintomas:</b></label><br>
+            <input type="radio" name="gravidade" class="bg-light">
+            <label class="form-label">Leve</label><br>
+            <input type="radio" name="gravidade" class="bg-light">
+            <label class="form-label">Moderado</label><br>
+            <input type="radio" name="gravidade" class="bg-light">
+            <label class="form-label">Grave</label><br>
+        </div>
+        <div class="button">
+            <a class="btn btn-primary" href="pagina3.html" role="button">Enviar e avançar</a>
+        </div>  
+    </div>
+    
+
+</div>
+    
+    
+
+</body>
